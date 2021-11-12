@@ -1,6 +1,4 @@
 # Procesverslag
-
-<details>
  
 ### Auteur:
 Casper den Nijs
@@ -10,8 +8,6 @@ Zwart
 
 #### Je focus:
 Responsive
- 
-</details>
 
 ## Je website
 
