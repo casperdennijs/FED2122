@@ -11,7 +11,7 @@ Responsive
 
 ## Je website
 
-<details>
+<details open>
 
 ### Je opdracht:
 https://www.apple.com/nl
@@ -52,7 +52,7 @@ MacBook Pro 14" en 16" - Apple (NL) (https://www.apple.com/nl/macbook-pro-14-and
 
 ## Voortgang 1 (week 2)
 
-<details open>
+<details>
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
