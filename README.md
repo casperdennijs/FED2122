@@ -22,11 +22,11 @@ https://www.apple.com/nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Mac - Apple (NL) (https://www.apple.com/nl/mac/)
-<img src="images/mac.jpg" width="375px" alt="Mac winkel pagina">
+<img src="images/mac.png" width="375px" alt="Mac winkel pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 MacBook Pro 14" en 16" - Apple (NL) (https://www.apple.com/nl/macbook-pro-14-and-16/)
-<img src="images/macbook_pro.jpg" width="375px" alt="MacBook Pro 14 en 16 inch informatie pagina">
+<img src="images/macbook_pro.png" width="375px" alt="MacBook Pro 14 en 16 inch informatie pagina">
  
 </details>
 
