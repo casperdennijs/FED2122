@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: block;
+    background: rgba(0,0,0,0.8);
+    color:#e4e4e4;
+    height: 48px;
+}
+
+nav div.menu, div.logo, div.shop {
+    position: absolute;
+    padding: 14px 14px 12px 14px;
+}
+
+nav div.menu {
+    left: 0;
+}
+
+nav div.logo {
+    left: 50%;
+    margin-left: -24px;
+}
+
+nav div.shop {
+    right: 0;
+}
+
+nav i {
+    font-size: 20px;
+    margin: 0;
+}
+
+ul.categories {
+    white-space: nowrap;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ul.categories li.item {
+    display: inline-block;
+    width: 33%;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 15px 0px;
+}
+
+ul.categories li.item p {
+    font-size: 12px;
+    margin: 0;
+    padding: 2px 0px;
+}
+
+section.holiday {
+    text-align: center;
+    padding: 3px 24px;
+    background-color: #e34140;
+    color: white;
+}
+
+section.holiday p {
+    font-size: 14px;
+}
+
+section.holiday p a {
+    color: white;
+    text-decoration: none;
+}
+
+section.holiday p a i {
+    font-size: 10px;
+    padding-left: 4px;
+}
+
+section.product {
+    padding: 44px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+section.product p, h1 {
+    margin: 0px;
+}
+
+section.product p.nieuw {
+    font-weight: bold;
+    color: rgb(214, 114, 0);
+}
+
+section.product h1.product-name {
+    font-size: 20px;
+}
+
+section.product p.large {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+section.product p.price {
+    font-weight: bold;
+    padding: 7px 0px;
+}
+
+section.product a.buy {
+    background-color: #0071e3;
+    padding: 7px;
+    border-radius: 20px;
+    display: inline-block;
+    width: 70px;
+    margin: 15px 0px;
+    color: white;
+}
+
+section.product a.more-info {
+    color: #06c;
+}
+
+section.product a.more-info i {
+    font-size: 10px;
+    padding-left: 4px;
+}
+
+section.product img.macbook-pro {
+    width: 100%;
+    padding-top: 35px;
+}
