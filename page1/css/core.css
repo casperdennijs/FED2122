@@ -2,131 +2,234 @@
     box-sizing: border-box;
 }
 
-html, body {
+body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
 }
 
-nav {
-    display: block;
+header {
+    position: sticky;
+    top: 0;
+
     background: rgba(0,0,0,0.8);
-    color:#e4e4e4;
-    height: 48px;
+    backdrop-filter: saturate(180%) blur(20px);
+
+    z-index: 1;
 }
 
-nav div.menu, div.logo, div.shop {
-    position: absolute;
-    padding: 14px 14px 12px 14px;
+main {
+
 }
 
-nav div.menu {
-    left: 0;
+footer {
+    background: #f5f5f7;
 }
 
-nav div.logo {
-    left: 50%;
-    margin-left: -24px;
+header nav {
+    margin: auto;
+    padding: 0 22px;
+
+    max-width: 980px;
 }
 
-nav div.shop {
-    right: 0;
-}
-
-nav i {
-    font-size: 20px;
+header nav ul {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    
     margin: 0;
-}
-
-ul.categories {
-    white-space: nowrap;
     padding: 0;
-    overflow-x: hidden;
+
+    list-style-type: none;
+    color: #ffffff;
+
+    height: 44px;
 }
 
-ul.categories li.item {
-    display: inline-block;
-    width: 33%;
-    width: calc(100% / 3);
-    text-align: center;
-    padding: 15px 0px;
-}
-
-ul.categories li.item p {
-    font-size: 12px;
-    margin: 0;
-    padding: 2px 0px;
-}
-
-section.holiday {
-    text-align: center;
-    padding: 3px 24px;
-    background-color: #e34140;
+main > section:first-of-type {
+    background-color: #E34140;
     color: white;
+    
+    padding: 1em;
+    
+    text-align: center;
 }
 
-section.holiday p {
+main > section:first-of-type p {
     font-size: 14px;
 }
 
-section.holiday p a {
+main > section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #000000;
     color: white;
+
+    text-align: center;
+
+    margin-bottom: 6px;
+    padding: 2em 2em 0 2em;
+
+    position: relative;
+    overflow: hidden;
+}
+
+main > section:nth-of-type(2) p,h1{
+    max-width: 250px;
+}
+
+main > section:nth-of-type(2) figure {
+    margin: 2em 0;
+}
+
+main > section:nth-of-type(2) figure img {
+    width: 100%;
+}
+
+main > section:nth-of-type(2) section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+main > section:nth-of-type(2) section img {
+    height: 112px;
+}
+
+main > section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #fbfbfd;
+    color: black;
+
+    text-align: center;
+
+    margin: 6px 0;
+    padding: 2em 2em 0 2em;
+
+    position: relative;
+}
+
+main > section:nth-of-type(3) img {
+    width: 100%;
+}
+
+main > section:nth-of-type(4) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #35283C;
+    color: white;
+
+    text-align: center;
+
+    margin: 6px 0;
+    padding: 0 2em;
+
+    position: relative;
+}
+
+main > section:nth-of-type(4) img{
+    width: 200px;
+}
+
+main > section:nth-of-type(4) > img:first-of-type {
+    order: 1;
+    padding-bottom: 1em;
+}
+
+main > section:nth-of-type(4) > h2 {
+    order: 2;
+}
+
+main > section:nth-of-type(4) > p {
+    order: 3;
+}
+
+main > section:nth-of-type(4) > a {
+    order: 4;
+}
+
+main > section:nth-of-type(4) > img:last-of-type {
+    order: 5;
+    padding-top: 1em;
+}
+
+main > section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #EEF0FF;
+    color: black;
+
+    text-align: center;
+
+    margin: 6px 0;
+    padding: 2em;
+}
+
+main > section:nth-of-type(5) img {
+    width: 100%;
+}
+
+main > section:nth-of-type(6) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #FBFBFD;
+    color: black;
+
+    text-align: center;
+
+    margin: 6px 0;
+    padding: 0 2em 2em 2em;
+}
+
+main > section:nth-of-type(6) img {
+    width: 100%;
+}
+
+main > section:nth-of-type(6) > img {
+    order: 1;
+}
+
+main > section:nth-of-type(6) > h2 {
+    order: 2;
+}
+
+main > section:nth-of-type(6) > p {
+    order: 3;
+}
+
+main > section:nth-of-type(6) > a {
+    order: 4;
+}
+
+main section p,h1,h2 {
+    margin: 0;
+}
+
+main section a {
+    color: #2997ff;
     text-decoration: none;
 }
 
-section.holiday p a i {
-    font-size: 10px;
-    padding-left: 4px;
+main section h1,h2 {
+    font-size: 32px;
 }
 
-section.product {
-    padding: 44px 0px;
-    text-align: center;
-    width: 100%;
-}
-
-section.product p, h1 {
-    margin: 0px;
-}
-
-section.product p.nieuw {
-    font-weight: bold;
-    color: rgb(214, 114, 0);
-}
-
-section.product h1.product-name {
-    font-size: 20px;
-}
-
-section.product p.large {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-section.product p.price {
-    font-weight: bold;
-    padding: 7px 0px;
-}
-
-section.product a.buy {
-    background-color: #0071e3;
-    padding: 7px;
-    border-radius: 20px;
-    display: inline-block;
-    width: 70px;
-    margin: 15px 0px;
-    color: white;
-}
-
-section.product a.more-info {
-    color: #06c;
-}
-
-section.product a.more-info i {
-    font-size: 10px;
-    padding-left: 4px;
-}
-
-section.product img.macbook-pro {
-    width: 100%;
-    padding-top: 35px;
+main section p {
+    font-size: 19px;
 }
