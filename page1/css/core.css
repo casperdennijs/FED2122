@@ -38,7 +38,7 @@ header nav {
     max-width: 980px;
 }
 
-header nav ul {
+header nav ul:first-of-type {
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -51,6 +51,10 @@ header nav ul {
     color: #ffffff;
 
     height: 44px;
+}
+
+header nav ul:last-of-type {
+    display: none;
 }
 
 main > section:first-of-type {
