@@ -3,8 +3,7 @@
 	font-style:normal;
 	font-weight:100;
 	src:local('☺'), url("../assets/fonts/SF-Pro-Text-Regular.otf");
-	/* (C) 2019 Apple Inc. All rights reserved.
- */
+	/* (C) 2019 Apple Inc. All rights reserved. */
 }
 
 @font-face {
@@ -12,8 +11,7 @@
 	font-style:bold;
 	font-weight:400;
 	src:local('☺'), url("../assets/fonts/SF-Pro-Text-Bold.otf");
-	/* (C) 2019 Apple Inc. All rights reserved.
- */
+	/* (C) 2019 Apple Inc. All rights reserved. */
 }
 
 @font-face {
@@ -21,6 +19,5 @@
 	font-style:black;
 	font-weight:900;
 	src:local('☺'), url("../assets/fonts/SF-Pro-Text-Black.otf");
-	/* (C) 2019 Apple Inc. All rights reserved.
- */
+	/* (C) 2019 Apple Inc. All rights reserved. */
 }
