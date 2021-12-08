@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    min-height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'SF Pro Text';
@@ -13,14 +17,7 @@ header {
     position: sticky;
     top: 0;
 
-    background: rgba(0,0,0,0.8);
-    backdrop-filter: saturate(180%) blur(20px);
-
-    z-index: 1;
-}
-
-main {
-
+    z-index: 2;
 }
 
 footer {
@@ -32,29 +29,71 @@ footer {
 }
 
 header nav {
-    margin: auto;
-    padding: 0 22px;
-
-    max-width: 980px;
+    position: relative;
 }
 
-header nav ul:first-of-type {
+header nav section:first-of-type {
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+
+    height: 3em;
+    width: 100%;
+}
+
+header nav section:first-of-type ul {
     display: flex;
     gap: 10px;
     justify-content: space-between;
     align-items: center;
-    
-    margin: 0;
-    padding: 0;
 
     list-style-type: none;
     color: #ffffff;
 
-    height: 44px;
+    margin: 0;
+    padding: 0 2em;
 }
 
-header nav ul:last-of-type {
+header nav section:last-of-type {
+    margin: -3em 0 0 0;
+    padding: 3em 0 1em 0;
+    background-color: black;
     display: none;
+}
+
+header nav .menuOpen {
+    display: block !important;
+}
+
+header nav section:last-of-type input {
+    height: 3em;
+    width: calc(100% - 2em);
+    background-color: #1D1D1F;
+    border-radius: .5em;
+    border: none;
+    margin: 0 1em .5em 1em;
+    padding: 0 1em;
+}
+
+header nav section:last-of-type ul {
+    list-style: none;
+    margin: .5em 0 0 0;
+    padding: .5em 2.5em 0 2.5em;
+    border-top: 1px solid #424245;
+}
+
+header nav section:last-of-type ul li {
+    padding: 1em 0;
+}
+
+header nav section:last-of-type ul li:not(:last-of-type) {
+    border-bottom: 1px solid #424245;
+}
+
+header nav section:last-of-type ul li a {
+    color: #F5F5F7;
+    opacity: .8;
+    text-decoration: none;
+    font-weight: 100;
 }
 
 main > section:first-of-type {
@@ -70,15 +109,7 @@ main > section:first-of-type p {
     font-size: 14px;
 }
 
-main > section:nth-of-type(2),
-main > section:nth-of-type(3),
-main > section:nth-of-type(4),
-main > section:nth-of-type(5),
-main > section:nth-of-type(6),
-main > section:nth-of-type(7),
-main > section:nth-of-type(8),
-main > section:nth-of-type(9),
-main > section:last-of-type {
+main > section:not(:first-of-type) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,7 +242,17 @@ main > section:nth-of-type(6) > a {
     order: 4;
 }
 
-main > section:nth-of-type(7) {
+main > section:last-of-type > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    width: 100%;
+}
+
+main > section:last-of-type > section:first-of-type {
     background-color: #F5F5F7;
     color: black;
 
@@ -219,15 +260,15 @@ main > section:nth-of-type(7) {
     padding: 2em 2em 0 2em;
 }
 
-main > section:nth-of-type(7) img {
+main > section:last-of-type > section:first-of-type img {
     width: 100%;
 }
 
-main > section:nth-of-type(7) h2 {
+main > section:last-of-type > section:first-of-type h2 {
     display: flex;
 }
 
-main > section:nth-of-type(8) {
+main > section:last-of-type > section:nth-of-type(2) {
     background-color: #F5F5F7;
     color: black;
 
@@ -235,11 +276,11 @@ main > section:nth-of-type(8) {
     padding: 2em 2em 0 2em;
 }
 
-main > section:nth-of-type(8) img {
+main > section:last-of-type > section:nth-of-type(2) img {
     width: 100%;
 }
 
-main > section:nth-of-type(9) {
+main > section:last-of-type > section:nth-of-type(3) {
     background-color: #FBFBFD;
     color: black;
 
@@ -247,31 +288,31 @@ main > section:nth-of-type(9) {
     padding: 2em 2em 0 2em;
 }
 
-main > section:nth-of-type(9) > img:first-of-type {
+main > section:last-of-type > section:nth-of-type(3) > img:first-of-type {
     order: 1;
     max-width: 8em;
 }
 
-main > section:nth-of-type(9) > h2 {
+main > section:last-of-type > section:nth-of-type(3) > h2 {
     order: 2;
     display: none;
 }
 
-main > section:nth-of-type(9) > p {
+main > section:last-of-type > section:nth-of-type(3) > p {
     order: 3;
 }
 
-main > section:nth-of-type(9) > a {
+main > section:last-of-type > section:nth-of-type(3) > a {
     order: 4;
 }
 
-main > section:nth-of-type(9) > img:last-of-type {
+main > section:last-of-type > section:nth-of-type(3) > img:last-of-type {
     order: 5;
     width: 100%;
     max-width: 500px;
 }
 
-main > section:nth-of-type(10) {
+main > section:last-of-type > section:last-of-type {
     background-image: url("../assets/images/section-9-1.jpg");
     background-size: 100%;
     color: white;
@@ -280,12 +321,12 @@ main > section:nth-of-type(10) {
     padding: 0 2em 2em 2em;
 }
 
-main > section:nth-of-type(10) h2 {
+main > section:last-of-type > section:last-of-type h2 {
     display: flex;
     margin-top: 8em;
 }
 
-main > section:nth-of-type(10) a {
+main > section:last-of-type > section:last-of-type a {
     color: white;
 }
 
@@ -297,6 +338,7 @@ main section a {
     color: #2997ff;
     text-decoration: none;
     font-weight: 100;
+    font-size: 19px;
 }
 
 main section h1, h2 {
@@ -309,36 +351,63 @@ main section p {
     font-weight: 100;
 }
 
-footer > section {
+footer > section > nav section {
     padding: 1em 0;
     border-bottom: 1px solid #d2d2d7;
 }
 
-footer > section ol {
+footer > section > section ol {
     padding-left: 1em;
 }
 
-footer > nav > section {
+footer > section > section {
     border-bottom: 1px solid #d2d2d7;
     padding: 1em 0;
 }
 
-footer > nav section section {
+footer > section > nav section details {
+    transition: 1s;
+}
+
+footer > section > nav section details summary {
     display: flex;
 }
 
-footer > nav section section p {
+footer > section > nav section details summary p {
     margin: 0;
 }
 
-footer > nav section section p:last-of-type {
+footer > section > nav section details summary p:last-of-type {
     margin-left: auto;
     padding-right: .5em;
 }
 
-footer > nav section ul {
-    display: none;
+footer > section > nav section details summary{
+    list-style: none;
+}
+
+footer > section > nav section details ul {
     list-style: none;
     padding: 1em 0;
     margin: 0;
 }
+
+footer > section > nav section details ul li {
+    padding: 6px 14px;
+}
+
+footer > section > nav section details ul li a {
+    color: #424245;
+    text-decoration: none;
+}
+
+/* https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal */
+footer > section > nav section details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -20px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+/* ************************************************************************************************************* */
