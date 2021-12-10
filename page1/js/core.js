@@ -17,4 +17,3 @@ if (window.screen.width > 832) {
         details[i].open = false;
     }
 }
-console.log(window.screen.width)

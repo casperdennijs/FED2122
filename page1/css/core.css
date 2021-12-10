@@ -61,6 +61,12 @@ header nav section:last-of-type {
     display: none;
 }
 
+header nav section:last-of-type li:first-of-type,
+header nav section:last-of-type li:nth-of-type(12),
+header nav section:last-of-type li:last-of-type {
+    display: none;
+}
+
 header nav .menuOpen {
     display: block !important;
 }
@@ -97,7 +103,8 @@ header nav section:last-of-type ul li a {
     font-weight: 100;
 }
 
-main > section:first-of-type {
+/* Start: Index */
+#index main > section:first-of-type {
     background-color: #E34140;
     color: white;
     
@@ -106,12 +113,12 @@ main > section:first-of-type {
     text-align: center;
 }
 
-main > section:first-of-type p,
-main > section:first-of-type a {
+#index main > section:first-of-type p,
+#index main > section:first-of-type a {
     font-size: 14px;
 }
 
-main > section:not(:first-of-type) {
+#index main > section:not(:first-of-type) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +127,7 @@ main > section:not(:first-of-type) {
     text-align: center;
 }
 
-main > section:nth-of-type(2) {
+#index main > section:nth-of-type(2) {
     background-color: #000000;
     color: white;
 
@@ -131,30 +138,30 @@ main > section:nth-of-type(2) {
     overflow: hidden;
 }
 
-main > section:nth-of-type(2) p, h1{
+#index main > section:nth-of-type(2) p, h1{
     max-width: 350px;
 }
 
-main > section:nth-of-type(2) figure {
+#index main > section:nth-of-type(2) figure {
     margin: 2em 0;
 }
 
-main > section:nth-of-type(2) figure img {
+#index main > section:nth-of-type(2) figure img {
     width: 100%;
 }
 
-main > section:nth-of-type(2) section {
+#index main > section:nth-of-type(2) section {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 10px;
 }
 
-main > section:nth-of-type(2) section img {
+#index main > section:nth-of-type(2) section img {
     height: 112px;
 }
 
-main > section:nth-of-type(3) {
+#index main > section:nth-of-type(3) {
     background-color: #fbfbfd;
     color: black;
 
@@ -164,11 +171,16 @@ main > section:nth-of-type(3) {
     position: relative;
 }
 
-main > section:nth-of-type(3) img {
+#index main > section:nth-of-type(3) section {
+    display: flex;
+    gap: 1em;
+}
+
+#index main > section:nth-of-type(3) img {
     width: 100%;
 }
 
-main > section:nth-of-type(4) {
+#index main > section:nth-of-type(4) {
     background-color: #35283C;
     color: white;
 
@@ -178,33 +190,35 @@ main > section:nth-of-type(4) {
     position: relative;
 }
 
-main > section:nth-of-type(4) img{
+#index main > section:nth-of-type(4) img{
     width: 200px;
 }
 
-main > section:nth-of-type(4) > img:first-of-type {
+#index main > section:nth-of-type(4) > img:first-of-type {
     order: 1;
     padding-bottom: 1em;
 }
 
-main > section:nth-of-type(4) > h2 {
+#index main > section:nth-of-type(4) > h2 {
     order: 2;
 }
 
-main > section:nth-of-type(4) > p {
+#index main > section:nth-of-type(4) > p {
     order: 3;
 }
 
-main > section:nth-of-type(4) > a {
+#index main > section:nth-of-type(4) > section {
     order: 4;
+    display: flex;
+    gap: 1em;
 }
 
-main > section:nth-of-type(4) > img:last-of-type {
+#index main > section:nth-of-type(4) > img:last-of-type {
     order: 5;
     padding-top: 1em;
 }
 
-main > section:nth-of-type(5) {
+#index main > section:nth-of-type(5) {
     background-color: #EEF0FF;
     color: black;
 
@@ -212,11 +226,11 @@ main > section:nth-of-type(5) {
     padding: 2em;
 }
 
-main > section:nth-of-type(5) img {
+#index main > section:nth-of-type(5) img {
     width: 100%;
 }
 
-main > section:nth-of-type(6) {    
+#index main > section:nth-of-type(6) {    
     background-color: #FBFBFD;
     color: black;
 
@@ -224,27 +238,29 @@ main > section:nth-of-type(6) {
     padding: 0 2em 2em 2em;
 }
 
-main > section:nth-of-type(6) img {
+#index main > section:nth-of-type(6) img {
     width: 100%;
 }
 
-main > section:nth-of-type(6) > img {
+#index main > section:nth-of-type(6) > img {
     order: 1;
 }
 
-main > section:nth-of-type(6) > h2 {
+#index main > section:nth-of-type(6) > h2 {
     order: 2;
 }
 
-main > section:nth-of-type(6) > p {
+#index main > section:nth-of-type(6) > p {
     order: 3;
 }
 
-main > section:nth-of-type(6) > a {
+#index main > section:nth-of-type(6) > section {
     order: 4;
+    display: flex;
+    gap: 1em;
 }
 
-main > section:last-of-type > section {
+#index main > section:last-of-type > section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,7 +270,7 @@ main > section:last-of-type > section {
     width: 100%;
 }
 
-main > section:last-of-type > section:first-of-type {
+#index main > section:last-of-type > section:first-of-type {
     background-color: #F5F5F7;
     color: black;
 
@@ -262,15 +278,35 @@ main > section:last-of-type > section:first-of-type {
     padding: 2em 2em 0 2em;
 }
 
-main > section:last-of-type > section:first-of-type img {
-    width: 100%;
+#index main > section:last-of-type > section:first-of-type p:first-of-type {
+    order: 1;
 }
 
-main > section:last-of-type > section:first-of-type h2 {
+#index main > section:last-of-type > section:first-of-type h2 {
+    order: 2;
     display: flex;
 }
 
-main > section:last-of-type > section:nth-of-type(2) {
+#index main > section:last-of-type > section:first-of-type p:nth-of-type(2) {
+    order: 3;
+}
+
+#index main > section:last-of-type > section:first-of-type p:last-of-type {
+    order: 4;
+}
+
+#index main > section:last-of-type > section:first-of-type section {
+    order: 5;
+    display: flex;
+    gap: 1em;
+}
+
+#index main > section:last-of-type > section:first-of-type img {
+    order: 6;
+    width: 100%;
+}
+
+#index main > section:last-of-type > section:nth-of-type(2) {
     background-color: #F5F5F7;
     color: black;
 
@@ -278,11 +314,16 @@ main > section:last-of-type > section:nth-of-type(2) {
     padding: 2em 2em 0 2em;
 }
 
-main > section:last-of-type > section:nth-of-type(2) img {
+#index main > section:last-of-type > section:nth-of-type(2) section {
+    display: flex;
+    gap: 1em;
+}
+
+#index main > section:last-of-type > section:nth-of-type(2) img {
     width: 100%;
 }
 
-main > section:last-of-type > section:nth-of-type(3) {
+#index main > section:last-of-type > section:nth-of-type(3) {
     background-color: #FBFBFD;
     color: black;
 
@@ -290,31 +331,33 @@ main > section:last-of-type > section:nth-of-type(3) {
     padding: 2em 2em 0 2em;
 }
 
-main > section:last-of-type > section:nth-of-type(3) > img:first-of-type {
+#index main > section:last-of-type > section:nth-of-type(3) > img:first-of-type {
     order: 1;
     max-width: 8em;
 }
 
-main > section:last-of-type > section:nth-of-type(3) > h2 {
+#index main > section:last-of-type > section:nth-of-type(3) > h2 {
     order: 2;
     display: none;
 }
 
-main > section:last-of-type > section:nth-of-type(3) > p {
+#index main > section:last-of-type > section:nth-of-type(3) > p {
     order: 3;
 }
 
-main > section:last-of-type > section:nth-of-type(3) > a {
+#index main > section:last-of-type > section:nth-of-type(3) > section {
     order: 4;
+    display: flex;
+    gap: 1em;
 }
 
-main > section:last-of-type > section:nth-of-type(3) > img:last-of-type {
+#index main > section:last-of-type > section:nth-of-type(3) > img:last-of-type {
     order: 5;
     width: 100%;
     max-width: 500px;
 }
 
-main > section:last-of-type > section:last-of-type {
+#index main > section:last-of-type > section:last-of-type {
     background-image: url("../assets/images/section-9-1.jpg");
     background-size: 100%;
     color: white;
@@ -323,14 +366,58 @@ main > section:last-of-type > section:last-of-type {
     padding: 0 2em 2em 2em;
 }
 
-main > section:last-of-type > section:last-of-type h2 {
+#index main > section:last-of-type > section:last-of-type h2 {
     display: flex;
     margin-top: 8em;
 }
 
-main > section:last-of-type > section:last-of-type a {
+#index main > section:last-of-type > section:last-of-type section {
+    display: flex;
+    gap: 1em;
+}
+
+#index main > section:last-of-type > section:last-of-type section a {
     color: white;
 }
+/* End: Index */
+
+/* Start: MacBook Pro */
+#macbook-pro main > section:not(:nth-of-type(2)) {
+    background-color: white;
+}
+
+#macbook-pro main > section:first-of-type {
+
+}
+
+#macbook-pro main > section:nth-of-type(2) {
+    background-color: black;
+}
+
+#macbook-pro main > section:nth-of-type(3) {
+
+}
+
+#macbook-pro main > section:nth-of-type(4) {
+
+}
+
+#macbook-pro main > section:nth-of-type(5) {
+
+}
+
+#macbook-pro main > section:nth-of-type(6) {
+
+}
+
+#macbook-pro main > section:nth-of-type(7) {
+
+}
+
+#macbook-pro main > section:last-of-type {
+
+}
+/* End: MacBook Pro */
 
 main section p, h1, h2 {
     margin: 0;
@@ -341,6 +428,9 @@ main section a {
     text-decoration: none;
     font-weight: 100;
     font-size: 19px;
+}
+main section a:hover {
+    text-decoration: underline;
 }
 
 main section h1, h2 {
@@ -411,5 +501,5 @@ footer > section > nav section details[open] summary ~ * {
 @keyframes sweep {
     0%    {opacity: 0; margin-top: -20px}
     100%  {opacity: 1; margin-top: 0px}
-  }
+}
 /* ************************************************************************************************************* */
