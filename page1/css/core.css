@@ -1,36 +1,127 @@
-@import "fonts.css";
-
 * {
     box-sizing: border-box;
+    font-family: 'SF Pro Text';
 }
 
 html, body {
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
-    font-family: 'SF Pro Text';
 }
 
-header {
+:root {
+    --background-light: white;
+    --background-dark: black;
+    --background-gray: #f5f5f7;
+    --text-black: black;
+    --text-white: white;
+    --text-gray: #6e6e73;
+    --link-blue: #2997ff;
+}
+
+/* Start: Font */
+@font-face {
+	font-family: 'SF Pro Text';
+	font-style: normal;
+	font-weight: 100;
+	src:local('☺'), url("../assets/fonts/SF-Pro-Text-Regular.otf");
+	/* (C) 2019 Apple Inc. All rights reserved. */
+}
+
+@font-face {
+	font-family: 'SF Pro Text';
+	font-style: bold;
+	font-weight: 400;
+	src:local('☺'), url("../assets/fonts/SF-Pro-Text-Bold.otf");
+	/* (C) 2019 Apple Inc. All rights reserved. */
+}
+
+@font-face {
+	font-family: 'SF Pro Text';
+	font-style: black;
+	font-weight: 900;
+	src:local('☺'), url("../assets/fonts/SF-Pro-Text-Black.otf");
+	/* (C) 2019 Apple Inc. All rights reserved. */
+}
+/* End: Font */
+
+#index header {
     position: sticky;
     top: 0;
 
     z-index: 2;
 }
 
+#macbook-pro header, #store header {
+    position: unset;
+}
+
+#store main {
+    background-color: var(--background-gray);
+}
+
 footer {
-    background: #f5f5f7;
-    color: #6e6e73;
+    background: var(--background-gray);
+    color: var(--text-gray);
     padding: 0 1em;
     font-weight: 100;
     font-size: 12px;
     margin: 6px 0 0 0;
 }
 
+#store footer {
+    margin: 0;
+}
+
 header nav {
     position: relative;
+}
+
+header > section {
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: 1.5em;
+    align-items: flex-end;
+    padding: 1em;
+    z-index: 1;
+    background-color: var(--background-light);
+    border-bottom: 1px solid rgba(0,0,0,0.16);
+}
+
+header > section a:first-of-type {
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+}
+
+header > section a:first-of-type span {
+    position: relative;
+    font-size: 12px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+header > section button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+header > section a:last-of-type {
+    background-color: var(--link-blue);
+    color: var(--text-white);
+    padding: .3em .7em;
+    border-radius: 1em;
+    font-weight: 100;
+    text-decoration: none;
 }
 
 header nav section:first-of-type {
@@ -230,7 +321,7 @@ header nav section:last-of-type ul li a {
     width: 100%;
 }
 
-#index main > section:nth-of-type(6) {    
+#index main > section:nth-of-type(7) {    
     background-color: #FBFBFD;
     color: black;
 
@@ -238,23 +329,23 @@ header nav section:last-of-type ul li a {
     padding: 0 2em 2em 2em;
 }
 
-#index main > section:nth-of-type(6) img {
+#index main > section:nth-of-type(7) img {
     width: 100%;
 }
 
-#index main > section:nth-of-type(6) > img {
+#index main > section:nth-of-type(7) > img {
     order: 1;
 }
 
-#index main > section:nth-of-type(6) > h2 {
+#index main > section:nth-of-type(7) > h2 {
     order: 2;
 }
 
-#index main > section:nth-of-type(6) > p {
+#index main > section:nth-of-type(7) > p {
     order: 3;
 }
 
-#index main > section:nth-of-type(6) > section {
+#index main > section:nth-of-type(7) > section {
     order: 4;
     display: flex;
     gap: 1em;
@@ -381,41 +472,684 @@ header nav section:last-of-type ul li a {
 }
 /* End: Index */
 
+/* Start: Store */
+#store main > section h2 {
+    font-size: 21px;
+}
+
+#store main > section h2 span{
+    color: var(--text-gray);
+}
+
+#store main > section:first-of-type {
+    background-color: var(--background-light);
+    padding: 1.5em 2em;
+    text-align: center;
+}
+
+#store main > section:first-of-type p,
+#store main > section:first-of-type a {
+    font-size: 14px;
+}
+
+#store main > section:nth-of-type(2) {
+    padding: 4em 1em 1em 1em;
+}
+
+#store main > section:nth-of-type(2) h1 span {
+    color: var(--text-gray);
+}
+
+#store main > section:nth-of-type(2) > section {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+#store main > section:nth-of-type(2) > section > section {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+#store main > section:nth-of-type(2) > section > section img {
+    height: 35px;
+    width: 35px;
+}
+
+#store main > section:nth-of-type(2) > section > section p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#store main > section:nth-of-type(2) > section > section a {
+    font-size: 14px;
+}
+
+#store main > section:nth-of-type(3) {
+    padding: 1em 0;
+}
+
+#store main > section:nth-of-type(3) ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    overflow: scroll;
+    padding: 1em;
+    text-align: center;
+    margin: 0;
+}
+
+#store main > section:nth-of-type(3) ul::-webkit-scrollbar {
+    display: none;
+}
+
+#store main > section:nth-of-type(3) ul li {
+    min-width: 96px;
+}
+
+#store main > section:nth-of-type(3) ul li a {
+    color: black;
+}
+
+#store main > section:nth-of-type(3) ul li a img {
+    width: 100%;
+}
+
+#store main > section:nth-of-type(3) ul li a p {
+    font-size: 14px;
+    color: black;
+}
+
+#store main > section:nth-of-type(4) {
+    padding: 1em;
+}
+
+#store main > section:nth-of-type(4) > section ul {
+    display: flex;
+    overflow: scroll;
+    list-style: none;
+    gap: 1.5em;
+    padding: 1em 0;
+    margin: 0;
+}
+
+#store main > section:nth-of-type(4) > section ul::-webkit-scrollbar {
+    display: none;
+}
+
+#store main > section:nth-of-type(4) > section ul li {
+    height: 450px;
+    min-width: 309px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    background-color: var(--background-light);
+    border-radius: 1em;
+    background-size: cover;
+    position: relative;
+}
+
+#store main > section:nth-of-type(4) > section ul li:first-of-type {
+    background-image: url("../assets/images/store/section-4-1.jpg");
+}
+
+#store main > section:nth-of-type(4) > section ul li:nth-of-type(2) {
+    background-image: url("../assets/images/store/section-4-2.jpg");
+}
+
+#store main > section:nth-of-type(4) > section ul li:nth-of-type(3) {
+    background-image: url("../assets/images/store/section-4-3.jpg");
+}
+
+#store main > section:nth-of-type(4) > section ul li:nth-of-type(4) {
+    background-image: url("../assets/images/store/section-4-4.jpg");
+}
+
+#store main > section:nth-of-type(4) > section ul li:nth-of-type(5) {
+    background-image: url("../assets/images/store/section-4-5.jpg");
+}
+
+#store main > section:nth-of-type(4) > section ul li:nth-of-type(6) {
+    background-image: url("../assets/images/store/section-4-6.jpg");
+}
+
+#store main > section:nth-of-type(4) > section ul li:nth-of-type(7) {
+    background-image: url("../assets/images/store/section-4-7.jpg");
+}
+
+#store main > section:nth-of-type(4) > section ul li:last-of-type {
+    background-image: url("../assets/images/store/section-4-8.jpg");
+}
+
+#store main > section:nth-of-type(4) > section ul li a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    text-decoration: none;
+}
+
+#store main > section:nth-of-type(4) > section ul li a h3 {
+    font-size: 12px;
+    color: var(--text-gray);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#store main > section:nth-of-type(4) > section ul li a p:first-of-type {
+    font-size: 22px;
+    color: var(--text-black);
+    font-weight: 400;
+}
+
+#store main > section:nth-of-type(4) > section ul li a p:last-of-type {
+    font-size: 17px;
+    color: var(--text-black);
+    font-weight: 100;
+    padding-top: 1em;
+}
+
+#store main > section:nth-of-type(4) > section ul li:nth-of-type(6) a h3,
+#store main > section:nth-of-type(4) > section ul li:nth-of-type(6) a p {
+    color: white;
+}
+
+#store main > section:nth-of-type(5) {
+    padding: 1em;
+}
+
+#store main > section:nth-of-type(5) > section > section {
+    display: flex;
+    overflow: scroll;
+    list-style: none;
+    gap: 1.5em;
+    padding: 1em 0;
+}
+
+#store main > section:nth-of-type(5) > section > section::-webkit-scrollbar {
+    display: none;
+}
+
+#store main > section:nth-of-type(5) > section > section > section:first-of-type {
+    height: 450px;
+    min-width: 309px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    background-color: var(--background-light);
+    border-radius: 1em;
+    background-size: cover;
+    position: relative;
+    background-image: url("../assets/images/store/section-5-1.jpg");
+}
+
+#store main > section:nth-of-type(5) > section > section > section:first-of-type a p {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-black);
+    padding-top: 1em;
+}
+
+#store main > section:nth-of-type(5) > section > section > section:first-of-type a,
+#store main > section:nth-of-type(5) > section > section > section:last-of-type > section a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    text-decoration: none;
+}
+
+#store main > section:nth-of-type(5) > section > section > section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#store main > section:nth-of-type(5) > section > section > section:last-of-type > section {
+    height: calc(225px - .5em);
+    min-width: 309px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    background-color: var(--background-light);
+    border-radius: 1em;
+    background-size: cover;
+    position: relative;
+}
+
+#store main > section:nth-of-type(5) > section > section > section:last-of-type > section a p {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-black);
+    padding-top: 1em;
+}
+
+#store main > section:nth-of-type(5) > section > section > section:last-of-type > section:first-of-type {
+    background-image: url("../assets/images/store/section-5-2.jpg");
+}
+
+#store main > section:nth-of-type(5) > section > section > section:last-of-type > section:last-of-type {
+    background-image: url("../assets/images/store/section-5-3.jpg");
+}
+
+#store main > section:nth-of-type(6) {
+    padding: 1em;
+}
+
+#store main > section:nth-of-type(6) > section ul {
+    display: flex;
+    overflow: scroll;
+    list-style: none;
+    gap: 1.5em;
+    padding: 1em 0;
+    margin: 0;
+}
+
+#store main > section:nth-of-type(6) > section ul::-webkit-scrollbar {
+    display: none;
+}
+
+#store main > section:nth-of-type(6) > section ul li {
+    height: 215px;
+    min-width: 309px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    background-color: var(--background-light);
+    border-radius: 1em;
+    background-size: cover;
+    position: relative;
+}
+
+#store main > section:nth-of-type(6) > section ul li a img {
+    height: 56px;
+}
+
+#store main > section:nth-of-type(6) > section ul li a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.25em;
+    text-decoration: none;
+}
+
+#store main > section:nth-of-type(6) > section ul li p {
+    color: var(--text-black);
+    font-weight: 400;
+}
+
+#store main > section:nth-of-type(6) > section ul li:first-of-type a span {
+    color: #3f6eb8;
+}
+
+#store main > section:nth-of-type(6) > section ul li:nth-of-type(3) a span {
+    color: #007aff;
+}
+
+#store main > section:nth-of-type(6) > section ul li:nth-of-type(4) a span {
+    background-image: linear-gradient(to right,#f8ab5e 0,#f36961 20%,#a176c8 40%,#759beb 60%,#65beb3 80%,#70db96 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#store main > section:nth-of-type(6) > section ul li:nth-of-type(5) a span {
+    color: #ac39ff;
+}
+
+#store main > section:nth-of-type(6) > section ul li:last-of-type a span {
+    color: #ff0053;
+}
+
+#store main > section:nth-of-type(7),
+#store main > section:nth-of-type(8) {
+    padding: 1em;
+}
+
+#store main > section:nth-of-type(7) > section ul,
+#store main > section:nth-of-type(8) > section ul {
+    display: flex;
+    overflow: scroll;
+    list-style: none;
+    gap: 1.5em;
+    padding: 1em 0;
+    margin: 0;
+}
+
+#store main > section:nth-of-type(7) > section ul::-webkit-scrollbar,
+#store main > section:nth-of-type(8) > section ul::-webkit-scrollbar {
+    display: none;
+}
+
+#store main > section:nth-of-type(7) > section ul li,
+#store main > section:nth-of-type(8) > section ul li {
+    height: 450px;
+    min-width: 309px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    background-color: var(--background-light);
+    border-radius: 1em;
+    background-size: cover;
+    position: relative;
+}
+
+#store main > section:nth-of-type(7) > section ul li a,
+#store main > section:nth-of-type(8) > section ul li a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.25em;
+    text-decoration: none;
+}
+
+#store main > section:nth-of-type(7) > section ul li:first-of-type {
+    background-image: url("../assets/images/store/section-7-1.jpg");
+}
+
+#store main > section:nth-of-type(7) > section ul li:first-of-type a p,
+#store main > section:nth-of-type(8) > section ul li:first-of-type a p {
+    color: var(--text-black);
+}
+
+#store main > section:nth-of-type(7) > section ul li:first-of-type a p:first-of-type,
+#store main > section:nth-of-type(8) > section ul li:first-of-type a p:first-of-type {
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 1em;
+}
+
+#store main > section:nth-of-type(7) > section ul li:first-of-type a p:last-of-type,
+#store main > section:nth-of-type(8) > section ul li:first-of-type a p:last-of-type {
+    font-size: 17px;
+    font-weight: 100;
+}
+
+#store main > section:nth-of-type(7) > section ul li:last-of-type a p {
+    color: var(--text-black);
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 1em;
+}
+
+#store main > section:nth-of-type(7) > section ul li:last-of-type {
+    background-image: url("../assets/images/store/section-7-7.jpg");
+}
+
+#store main > section:nth-of-type(7) > section ul li:not(:first-of-type):not(:last-of-type) a,
+#store main > section:nth-of-type(8) > section ul li:not(:first-of-type) a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#store main > section:nth-of-type(7) > section ul li:not(:first-of-type):not(:last-of-type) a img,
+#store main > section:nth-of-type(8) > section ul li:not(:first-of-type) a img {
+    order: 1;
+    width: 100%;
+}
+
+#store main > section:nth-of-type(7) > section ul li:not(:first-of-type):not(:last-of-type) a p:first-of-type,
+#store main > section:nth-of-type(8) > section ul li:not(:first-of-type) a p:first-of-type {
+    order: 2;
+    font-size: 12px;
+    font-weight: 100;
+    color: #bf4800;
+}
+
+#store main > section:nth-of-type(7) > section ul li:not(:first-of-type):not(:last-of-type) a h3,
+#store main > section:nth-of-type(8) > section ul li:not(:first-of-type) a h3 {
+    order: 3;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-black);
+    margin: .5em 0 1.5em 0;
+}
+
+#store main > section:nth-of-type(7) > section ul li:not(:first-of-type):not(:last-of-type) a p:last-of-type,
+#store main > section:nth-of-type(8) > section ul li:not(:first-of-type) a p:last-of-type {
+    order: 4;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D1D1F;
+}
+
+#store main > section:nth-of-type(8) > section ul li:first-of-type {
+    background-image: url("../assets/images/store/section-8-1.jpg");
+}
+
+#store main > section:nth-of-type(9),
+#store main > section:last-of-type {
+    padding: 1em;
+}
+
+#store main > section:nth-of-type(9) > section ul,
+#store main > section:last-of-type > section ul {
+    display: flex;
+    overflow: scroll;
+    list-style: none;
+    gap: 1.5em;
+    padding: 1em 0;
+    margin: 0;
+}
+
+#store main > section:nth-of-type(9) > section ul::-webkit-scrollbar,
+#store main > section:last-of-type > section ul::-webkit-scrollbar {
+    display: none;
+}
+
+#store main > section:nth-of-type(9) > section ul li,
+#store main > section:last-of-type > section ul li {
+    height: 450px;
+    min-width: 309px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    background-color: var(--background-light);
+    border-radius: 1em;
+    background-size: cover;
+    position: relative;
+}
+
+#store main > section:nth-of-type(9) > section ul li:first-of-type {
+    background-image: url("../assets/images/store/section-9-1.jpg");
+}
+
+#store main > section:nth-of-type(90) > section ul li:nth-of-type(2) {
+    background-image: url("../assets/images/store/section-9-2.jpg");
+}
+
+#store main > section:nth-of-type(9) > section ul li:last-of-type {
+    background-image: url("../assets/images/store/section-9-3.jpg");
+}
+
+#store main > section:nth-of-type(9) > section ul li a,
+#store main > section:last-of-type > section ul li a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#store main > section:nth-of-type(9) > section ul li a p,
+#store main > section:last-of-type > section ul li a p {
+    font-size: 12px;
+    color: var(--text-gray);
+    font-weight: 100;
+    text-transform: uppercase;
+    order: 1;
+}
+
+#store main > section:nth-of-type(9) > section ul li:not(:first-of-type) a h3 {
+    margin-top: 25px;
+}
+
+#store main > section:last-of-type > section ul li:nth-of-type(2) a p, 
+#store main > section:last-of-type > section ul li:nth-of-type(2) a h3 {
+    color: white;
+}
+
+#store main > section:nth-of-type(9) > section ul li a h3,
+#store main > section:last-of-type > section ul li a h3 {
+    font-size: 22px;
+    color: var(--text-black);
+    font-weight: 400;
+    order: 2;
+    margin: .5em 0;
+}
+
+#store main > section:nth-of-type(9) > section ul li:first-of-type {
+    background-image: url("../assets/images/store/section-9-1.jpg");
+}
+
+#store main > section:nth-of-type(9) > section ul li:nth-of-type(2) {
+    background-image: url("../assets/images/store/section-9-2.jpg");
+    background-position-x: center;
+}
+
+#store main > section:nth-of-type(9) > section ul li:last-of-type {
+    background-image: url("../assets/images/store/section-9-3.jpg");
+}
+
+#store main > section:last-of-type > section ul li:first-of-type {
+    background-image: url("../assets/images/store/section-10-1.jpg");
+}
+
+#store main > section:last-of-type > section ul li:nth-of-type(2) {
+    background-image: url("../assets/images/store/section-10-2.jpg");
+}
+
+#store main > section:last-of-type > section ul li:last-of-type {
+    background-image: url("../assets/images/store/section-10-3.jpg");
+}
+/* End: Store */
+
 /* Start: MacBook Pro */
 #macbook-pro main > section:not(:nth-of-type(2)) {
     background-color: white;
 }
 
-#macbook-pro main > section:first-of-type {
+#macbook-pro main > section:first-of-type > section {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 4em;
+}
 
+#macbook-pro main > section:first-of-type > section:first-of-type h1 {
+    order: 1;
+}
+
+#macbook-pro main > section:first-of-type > section:first-of-type img {
+    order: 2;
+    width: 100%;
+    margin: 1em 0;
+}
+
+#macbook-pro main > section:first-of-type > section:first-of-type h2 {
+    order: 3;
+}
+
+#macbook-pro main > section:first-of-type > section:first-of-type p {
+    order: 4;
+    margin: 1em 0;
+}
+
+#macbook-pro main > section:first-of-type > section:first-of-type a {
+    order: 5;
+}
+
+#macbook-pro main > section:first-of-type > section:last-of-type {
+    text-align: unset;
+    margin-bottom: 2em;
+}
+
+#macbook-pro main > section:first-of-type > section:last-of-type > section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1em 0;
+}
+
+#macbook-pro main > section:first-of-type > section:last-of-type > section span {
+    width: 40px;
+    height: 4px;
+    background-color: #1d1d1f;
+}
+
+#macbook-pro main > section:first-of-type > section:last-of-type > section p:first-of-type {
+    width: 100%;
+    margin: 1em 0 0 0;
+    color: var(--text-gray)
+}
+
+#macbook-pro main > section:first-of-type > section:last-of-type > section p:nth-of-type(2) {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+#macbook-pro main > section:first-of-type > section:last-of-type > section p:last-of-type {
+    font-size: 1em;
+    font-weight: 100;
+    margin-left: 1em;
+    color: var(--text-gray)
 }
 
 #macbook-pro main > section:nth-of-type(2) {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-dark);
+    color: var(--text-white);
+    padding: 2em;
 }
 
-#macbook-pro main > section:nth-of-type(3) {
-
+#macbook-pro main > section:nth-of-type(2) h2 {
+    text-align: center;
+    margin-top: 3em;
 }
 
-#macbook-pro main > section:nth-of-type(4) {
-
+#macbook-pro main > section:nth-of-type(2) > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1.5em 0;
 }
 
-#macbook-pro main > section:nth-of-type(5) {
-
+#macbook-pro main > section:nth-of-type(2) > section > section {
+    padding: 1em;
 }
 
-#macbook-pro main > section:nth-of-type(6) {
-
+#macbook-pro main > section:nth-of-type(2) > section > section img {
+    width: 100%;
+    margin-bottom: 1em;
 }
 
-#macbook-pro main > section:nth-of-type(7) {
-
+#macbook-pro main > section:nth-of-type(2) > section:first-of-type > section p:not(:first-of-type) {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: .5em 0;
+    font-size: 14px;
 }
 
-#macbook-pro main > section:last-of-type {
+#macbook-pro main > section:nth-of-type(2) > section:first-of-type > section:first-of-type p:not(:first-of-type) {
+    background-image: linear-gradient(90deg, rgb(37, 47, 255) -79.48%, rgb(37, 106, 243) -29.48%, rgb(124, 192, 226) 20.52%, rgb(37, 106, 243) 70.52%, rgb(37, 47, 255) 120.52%);
+}
 
+#macbook-pro main > section:nth-of-type(2) > section:first-of-type > section:last-of-type p:not(:first-of-type) {
+    background-image: linear-gradient(90deg, rgb(135, 39, 255) -79.48%, rgb(157, 68, 253) -29.48%, rgb(255, 159, 225) 20.52%, rgb(157, 68, 253) 70.52%, rgb(135, 39, 255) 120.52%);
+}
+
+#macbook-pro main > section:nth-of-type(2) > button {
+    background: var(--background-light);
+    color: var(--text-black);
+    padding: 1em 1.5em;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 2em;
+    border: none;
+    margin: 2em auto;
 }
 /* End: MacBook Pro */
 
@@ -503,3 +1237,170 @@ footer > section > nav section details[open] summary ~ * {
     100%  {opacity: 1; margin-top: 0px}
 }
 /* ************************************************************************************************************* */
+
+/* Start: Desktop CSS */
+@media screen and (min-width: 50em) {
+    header nav section:first-of-type {
+        display: none;
+    }
+
+    header nav section:last-of-type {
+        display: block;
+
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: saturate(180%) blur(20px);
+
+        height: 3em;
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav section:last-of-type input {
+        display: none;
+    }
+
+    header nav section:last-of-type ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+
+        margin: 0;
+        padding: 0;
+
+        height: 100%;
+
+        border: 0;
+
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    header nav section:last-of-type li:first-of-type,
+    header nav section:last-of-type li:nth-of-type(12),
+    header nav section:last-of-type li:last-of-type {
+        display: block;
+    }
+
+    header nav section:last-of-type ul li {
+        border-bottom: 0 !important;
+        font-size: 12px;
+    }
+
+    #index main > section:last-of-type {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-gap: 6px;
+    }
+
+    #index main > section:last-of-type > section {
+        height: 100%;
+    }
+
+    #index main > section:last-of-type > section {
+        justify-content: flex-end;
+        padding: 2em 2em 0 2em !important;
+    }
+
+    #index main > section > img {
+        max-width: 25em;
+    }
+
+    #index main > section:last-of-type > section:nth-of-type(3) img:last-of-type {
+        max-width: 25em !important;
+    }
+
+    #index main > section:last-of-type > section:last-of-type {
+        padding: 2em 2em 2em 2em !important;
+    }
+
+    #index main > section:last-of-type > section:last-of-type h2 {
+        margin: 0;
+    }
+
+    #store main > section h2 {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    #store main > section:nth-of-type(2) {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    #store main > section:nth-of-type(2) h1 {
+        width: 100%;
+        max-width: unset;
+    }
+
+    #store main > section:nth-of-type(2) > section {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    #store main > section:not(:first-of-type):not(:nth-of-type(2)):not(:nth-of-type(3)):not(:nth-of-type(6)) > section ul li {
+        height: 500px;
+        background-position-x: center;
+    }
+
+    #store main > section:nth-of-type(5) > section > section > section:first-of-type {
+        height: 500px;
+        background-position-x: center;
+    }
+
+    #store main > section:nth-of-type(5) > section > section > section:last-of-type > section {
+        height: calc(250px - 0.5em);
+        background-position-x: center;
+    }
+
+    #store main > section:not(:first-of-type):not(:nth-of-type(2)) > section ul li,
+    #store main > section:nth-of-type(5) > section > section,
+    #store main > section:nth-of-type(3) > nav ul li {
+        transform: translateX(calc(max(1024px, 100vw)/2 - 490px)); /* Bron code Apple site */
+    }
+
+    main section a {
+        font-size: 21px;
+    }
+
+    main section h1, h2 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    
+    main section p {
+        font-size: 21px;
+        font-weight: 100;
+    }
+
+    footer > section {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    footer > section > nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    footer > section > nav section {
+        padding: 1em .5em;
+    }
+
+    footer > section > nav section details[open] summary {
+        pointer-events: none;
+    }
+
+    footer > section > nav section details summary p:last-of-type {
+        display: none;
+    }
+
+    footer > section > nav section details ul li {
+        padding: 6px 0;
+    }
+}
+/* End: Desktop CSS */

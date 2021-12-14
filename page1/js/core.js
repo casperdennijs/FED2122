@@ -1,5 +1,5 @@
-let menu = document.querySelector("#menu")
-let button = document.querySelector("#button")
+let menu = document.querySelector("nav section:nth-of-type(2)")
+let button = document.querySelector("nav section:first-of-type ul li:first-of-type")
 let details = document.querySelectorAll("details")
 
 function openMenu() {
