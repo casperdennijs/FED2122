@@ -22,9 +22,9 @@ Mac - Apple (NL) (https://www.apple.com/nl/mac/)
 <img src="images/mac.png" width="375px" alt="Mac winkel pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-MacBook Pro 14" en 16" - Apple (NL) (https://www.apple.com/nl/macbook-pro-14-and-16/)
+Apple Store Online - Apple (NL) (https://www.apple.com/nl/store)
 
-<img src="images/macbook_pro.png" width="375px" alt="MacBook Pro 14 en 16 inch informatie pagina">
+<img src="images/macbook_pro.png" width="375px" alt="Apple Store Online">
  
 </details>
 
@@ -33,7 +33,6 @@ MacBook Pro 14" en 16" - Apple (NL) (https://www.apple.com/nl/macbook-pro-14-and
 ## Breakdownschets (week 1)
 
 <details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
@@ -53,29 +52,13 @@ MacBook Pro 14" en 16" - Apple (NL) (https://www.apple.com/nl/macbook-pro-14-and
 ## Voortgang 1 (week 2)
 
 <details>
-<summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+Bijna helemaal klaar met de content voor de eerste pagina. Al een klein beetje zitten stylen voor de eerste content.
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Content afronden
+- Beginnen met stylen
 
 </details>
 
@@ -86,29 +69,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Voortgang 2 (week 3)
 
 <details>
-<summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+Halverwege met pagina 1. De pagina is ook nog niet responsive. Content is wel helemaal aanwezig, maar nog niet helemaal gestyled.
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Styling verder afmaken
+- Beginnen met responsive design voor desktop
 
 </details>
 
@@ -119,33 +86,14 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Toegankelijkheidstest (week 4)
 
 <details>
-<summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Niet alles was te bereiken met de tab knop
+Sommige knoppen in het menu en de pagina zelf kon je nog niet met tab drukken bereiekn
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Oplossing: Linkjes toevoegen bij de benodigde elementen waar het nog mis of anders tabindex toevoegen in HTML.
 
 </details>
 
@@ -156,29 +104,13 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 ## Voortgang 3 (week 4)
 
 <details>
-<summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+Vooruitgang geboekt en pagina 1 zo goed als af. Door planning loop ik achter op pagina 2 dus moet dit gaan inhalen.
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Pagina 1 afmaken
+- Beginnen aan pagina 2
 
 </details>
 
@@ -189,10 +121,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Eindgesprek (week 5)
 
 <details>
-<summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Beide pagina's zijn inmiddels af en responsive.
 
 ### Screenshot(s)
 
@@ -206,13 +137,10 @@ hier screenshot(s) van je eindresultaat
 
 ## Bronnenlijst
 
-<details open>
-<summary>continu bijhouden terwijl je werkt</summary>
+<details>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. bron 1
-2. bron 2
-3. ...
+1. Broncode van de Apple pagina's zelf.
+2. https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal
+3. https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft
 
 </details>
