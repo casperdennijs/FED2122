@@ -34,14 +34,8 @@ Apple Store Online - Apple (NL) (https://www.apple.com/nl/store)
 
 <details>
 
-### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+Je kan mijn breakdownschets online vinden op Miro:
+https://miro.com/app/board/o9J_liN33es=/?invite_link_id=320666220877
 
 </details>
 
