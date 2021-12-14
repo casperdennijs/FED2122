@@ -19,12 +19,12 @@ https://www.apple.com/nl
 #### Screenshot(s) van de eerste pagina (small screen): 
 Mac - Apple (NL) (https://www.apple.com/nl/mac/)
 
-<img src="images/mac.png" width="375px" alt="Mac winkel pagina">
+<img src="readme-files/1.png" width="375px" alt="Mac winkel pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Apple Store Online - Apple (NL) (https://www.apple.com/nl/store)
 
-<img src="images/macbook_pro.png" width="375px" alt="Apple Store Online">
+<img src="readme-files/2.png" width="375px" alt="Apple Store Online">
  
 </details>
 
