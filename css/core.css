@@ -339,7 +339,7 @@ header nav section:last-of-type ul li a {
     width: 100%;
 }
 
-#index main > section:nth-of-type(7) {    
+#index main > section:nth-of-type(6) {    
     background-color: #FBFBFD;
     color: black;
 
@@ -347,23 +347,23 @@ header nav section:last-of-type ul li a {
     padding: 0 2em 2em 2em;
 }
 
-#index main > section:nth-of-type(7) img {
+#index main > section:nth-of-type(6) img {
     width: 100%;
 }
 
-#index main > section:nth-of-type(7) > img {
+#index main > section:nth-of-type(6) > img {
     order: 1;
 }
 
-#index main > section:nth-of-type(7) > h2 {
+#index main > section:nth-of-type(6) > h2 {
     order: 2;
 }
 
-#index main > section:nth-of-type(7) > p {
+#index main > section:nth-of-type(6) > p {
     order: 3;
 }
 
-#index main > section:nth-of-type(7) > section {
+#index main > section:nth-of-type(6) > section {
     order: 4;
     display: flex;
     gap: 1em;
