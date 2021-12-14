@@ -6,6 +6,7 @@
 html, body {
     min-height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -130,6 +131,9 @@ header nav section:first-of-type {
 
     height: 3em;
     width: 100%;
+
+    position:relative;
+    z-index: 3;
 }
 
 header nav section:first-of-type ul {
@@ -150,6 +154,10 @@ header nav section:last-of-type {
     padding: 3em 0 1em 0;
     background-color: black;
     display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
 header nav section:last-of-type li:first-of-type,
@@ -160,6 +168,16 @@ header nav section:last-of-type li:last-of-type {
 
 header nav .menuOpen {
     display: block !important;
+    animation: moveDown 1s forwards;
+}
+
+@keyframes moveDown {
+    0%{
+        margin-top: -100%;
+    }
+    100%{
+        margin-top: -48px;
+    }
 }
 
 header nav section:last-of-type input {
@@ -183,7 +201,7 @@ header nav section:last-of-type ul li {
     padding: 1em 0;
 }
 
-header nav section:last-of-type ul li:not(:last-of-type) {
+header nav section:last-of-type ul li:not(:nth-of-type(11)) {
     border-bottom: 1px solid #424245;
 }
 
@@ -449,7 +467,7 @@ header nav section:last-of-type ul li a {
 }
 
 #index main > section:last-of-type > section:last-of-type {
-    background-image: url("../assets/images/section-9-1.jpg");
+    background-image: url("../assets/images/index/section-9-1.jpg");
     background-size: 100%;
     color: white;
 
@@ -546,6 +564,7 @@ header nav section:last-of-type ul li a {
 
 #store main > section:nth-of-type(3) ul li {
     min-width: 96px;
+    max-width: 4em;
 }
 
 #store main > section:nth-of-type(3) ul li a {
@@ -563,6 +582,11 @@ header nav section:last-of-type ul li a {
 
 #store main > section:nth-of-type(4) {
     padding: 1em;
+    position: relative;
+}
+
+#store main > section:nth-of-type(4) button {
+    display: none;
 }
 
 #store main > section:nth-of-type(4) > section ul {
@@ -1290,6 +1314,10 @@ footer > section > nav section details[open] summary ~ * {
         font-size: 12px;
     }
 
+    main {
+        margin-top: 48px;
+    }
+
     #index main > section:last-of-type {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1320,6 +1348,36 @@ footer > section > nav section details[open] summary ~ * {
 
     #index main > section:last-of-type > section:last-of-type h2 {
         margin: 0;
+    }
+
+    #store main > section:nth-of-type(4) button {
+        display: unset;
+        position: absolute;
+        margin: 1em;
+        border: 0;
+        width: 3em;
+        height: 3em;
+        border-radius: 100%;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        cursor: pointer;
+    }
+    
+    #store main > section:nth-of-type(4) button:first-of-type {
+        left: 0;
+        top: 50%;
+        z-index: 2;
+        transform: rotate(180deg);
+    }
+
+    #store main > section:nth-of-type(4) button::before {
+        content: "\279C";
+    }
+    
+    #store main > section:nth-of-type(4) button:last-of-type {
+        right: 0;
+        top: 50%;
+        z-index: 2;
     }
 
     #store main > section h2 {
@@ -1360,7 +1418,7 @@ footer > section > nav section details[open] summary ~ * {
     #store main > section:not(:first-of-type):not(:nth-of-type(2)) > section ul li,
     #store main > section:nth-of-type(5) > section > section,
     #store main > section:nth-of-type(3) > nav ul li {
-        transform: translateX(calc(max(1024px, 100vw)/2 - 490px)); /* Bron code Apple site */
+        transform: translateX(calc(max(1024px, 100vw)/2 - 510px)); /* Bron code Apple site */
     }
 
     main section a {
